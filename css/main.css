@@ -1,0 +1,133 @@
+html, body, main, #container {
+    height: 100%; 
+    width: 100%; 
+    padding: 0; 
+    margin: 0; 
+}
+
+main { 
+    background-color: #F9FAF9;
+    padding: 0rem 1.1rem 3rem 0.5rem;
+}
+
+#container {
+    position: relative;
+    overflow : hidden; 
+    background-color: #F6F1E2;
+}
+
+a:visited, a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+/* Prevent IE10, IE11 and MS Edge from adding it's own intrinsic show/hide password icon - 
+a custom show/hide password icon has already been created ( for needs of all other
+browsers ) - the Microsoft feature would cause two show/icon icons to appear on these 
+MS browsers */
+input::-ms-clear, input::-ms-reveal {
+    display: none;
+}
+
+/* this div will be rotated to give impression of lower triangle on background of login
+screen */
+#triangle-background { 
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    height: 500vw;
+    width: 500vh;
+    background-color: #F5E9E6; 
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 35.4rem;
+}
+
+.login-form form {
+    margin-bottom: 1.5rem;
+    background: #FFF;
+    box-shadow: 0rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+    padding: 2.5rem 2.6rem 1.7rem;
+    border-radius: 0.7rem;
+}
+
+.login-link {
+  font-size: 1.1rem;
+  color: #999;
+}
+
+.company-logo {
+  margin-bottom: 2.8rem;
+}
+
+.sign-in-title {
+  color: #ABABAB; 
+  font-size: 1rem;
+}
+
+/**************************** Overriding Bootstrap Default Styling ***********************/
+/*************************************************************************************/
+
+.btn-primary {
+    border: none;
+}
+
+.form-group {
+    margin-bottom:2rem;
+}
+
+.form-control, .btn {
+    min-height: 3.6rem;
+    border-radius: 0.7rem;
+}
+
+.btn {        
+    font-size: 1.3rem;
+    background-color: #0077FF;
+}
+
+/****Styling linked with seamlessly adding password show/hide button into password field **/
+/******************************************************************************************/
+
+.login-form .form-control, #showhide {
+    outline:none;
+    outline-width: 0;
+    box-shadow: none;
+    border: 0.1rem solid #ccc;
+}
+
+#showhide {        
+    background-color: #FFF;
+    border-left: none;
+}
+
+.login-form .form-control:focus, .login-form .form-control:active, #showhide:focus, 
+#showhide:active {
+    outline:none;
+    outline-width: 0;
+    box-shadow: none;
+    border: 0.1rem solid #ccc;
+}
+
+#pwd, #pwd:focus, #pwd:active {
+    border-right:none;
+}
+
+#showhide:focus, #showhide:active {
+    border-left:none;
+}
+
+/*************************************************************************************/

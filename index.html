@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+	  	<meta charset="utf-8">
+	  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  	<meta name="description" content="Lanstad Login Screen">
+	  	<meta name="author" content="Dara Gilroy">
+
+	  	<title>Login - Lanstad</title>
+
+	  	<!-- Add a Lanstad favicon -->
+	  	<link rel="shortcut icon" href="img/lanstad-favicon.ico" type="image/x-icon">
+
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	  	<link rel="stylesheet" href="css/main.css?v=1.0">
+
+	  	<!-- Loading javascript files here ( rather than at base of body ) to reduce small time
+	  		lag in decorative background triangles appearing at page load -->
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+	  	<script src="js/main.js"></script>
+
+	</head>
+
+	<body>	  	
+
+		<main>
+
+			<span class="sign-in-title">Sign-in</span>
+
+			<div id="container">
+		  	
+			  	<!-- div to be rotated to give impression of lower triangle on background of  screen -->
+			  	<div id="triangle-background"></div>
+
+				<section class="login-form">
+				    
+				    <form action="#" method="post">
+
+						<div class="company-logo text-center">
+							<img src="img/lanstad-logo.jpg" alt="Lanstad logo image">
+						</div>  
+				        
+				        <div class="form-group">
+				            <input type="text" class="form-control" placeholder="Username" required="required">
+				        </div>
+
+				        <div class="form-group">
+				            
+				            <div class="input-group">
+
+					            <input type="password" id="pwd" class="form-control" placeholder="Password" required="required">
+
+					            <span class="input-group-btn">
+
+					            	 <!-- Password show/hide toggle button -->
+			                         <button type="button" class="btn" id="showhide" data-val='1'>
+				                         	<span id='eye' class="glyphicon glyphicon-eye-open"></span>
+			                         </button>
+
+			                     </span>
+
+	                     	</div>
+
+				        </div>
+
+				        <div class="form-group sign-in">
+				            <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+				        </div>
+
+				        <div class="clearfix">
+				            <a href="#" class="login-link pull-left">Request Access</a>
+				            <a href="#" class="login-link pull-right">Forgot Password?</a>
+				        </div>
+
+				    </form>
+				    
+				</section> <!-- END .login-form -->
+
+			</div> <!-- END #container -->
+
+		</main>
+
+	</body>
+
+</html>
